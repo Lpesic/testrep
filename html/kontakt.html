@@ -14,9 +14,14 @@
         function posalji(){
             //alert("Poziva se funkcija");
             let email = document.getElementById("email").value;
+            if (email.includes('@') == false)
+            alert ("Email nije ispravan.");
+            else 
+            {
             alert(email);
             let poruka = document.getElementById("poruka").value;
             document.getElementById("korisnik_unos").innerHTML="Korisnik "+email+" je rekao: "+poruka; 
+            }
         }
     </script>
 </head>
