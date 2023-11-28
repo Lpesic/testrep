@@ -23,14 +23,14 @@ function provjeri(polje)
     {
         const el = document.getElementById(polje[i]);
         
-        if(!el) 
+        if(!el || el === "") 
         {
             sveprazno = true;
             break;
         }  
-
+    }
     if (sveprazno === true) alert("Ispunite sva polja!");
-    else alert("Uspješno ste registrirani!");
+    else alert("Uspješno ste registrirani!"); 
 }
 
     </script>
